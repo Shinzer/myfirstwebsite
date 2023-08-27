@@ -5,132 +5,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
     <link rel="icon" href="logo-no-background.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Christian Vinarao</title>
 </head>
+
 <body style="background-color: rgb(248, 241, 241);">
-    <div class="header">
-        <div class="left">
-            <img class="logo" src="logo-no-background.png" alt="">
-        </div>
-        
-        <div class="right">
-        <a href="hobbies.html"><button class="hobbies">Hobbies</button></a>
-        <a href="contact.html"><button class="contacts">Contact me</button></a>
-        </div>
+
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fa fa-bars" id="btn"></i>
+        <i class="fa fa-times" id="cancel"></i>
+    </label>
+
+    <div class="sidebar">
+        <header>Tianny</header>
+        <ul>
+            <li><a href="index.html"><i class="fa fa-home fa-fade"></i>Home</a></li>
+            <li><a href="#about"><i class="fa fa-book"></i>About Me</a></li>
+            <li><a href="#"><i class="fa fa-check"></i>Projects</a></li>
+            <li><a href="contact.html"><i class="fa fa-cog fa-spin"></i>Hire Me</a></li>
+        </ul>
     </div>
 
-    <div class="intro">
-        <h1>Hi! I am Christian Vinarao.</h1>
-        <p class="bio">Computer Engineering Student. <strong><em>Co-Owner of BLG Services and Enterprises</em></strong></p></p>
-        <img class="pfp" src="PFP.jpg" alt="">
-    </div>
-    <div style="text-align: center;">
-        <a href="https://www.facebook.com/vinarao1225/"><img class="facebook" src="bnwf.png" alt=""></a>
-        <a href="https://www.instagram.com/tiannvnr/"><img class="instagram" src="bnwi.png" alt=""></a>
-        <a href="https://www.linkedin.com/in/christian-vinarao-aab321251/"><img src="bnwl.png" alt="" class="linkedin"></a>
-        <a href="https://github.com/Shinzer"><img src="git.png" alt="" class="git"></a>
-        <p style="
-        margin-top: 10px;
-        margin-bottom: 0px;
-        text-align: center; 
-        color: rgb(150,150,150); 
-        font-weight: 500; 
-        display: block;">cvinarao50@gmail.com | <a href="https://www.youtube.com/channel/UC8z7pQHpvbWya_QdxbxyisQ"><button class="btn">SUBSCRIBE</button></a> to my YouTube channel.</p>
-    </div>
+     <section>
 
-    <div class="content">
-        <div class="content1">
+        <div class="header">
+            <div class="left">
+                <img class="logo" src="logo-no-background.png" alt="">
+            </div>
+            
+            <div class="right">
+            <a href="hobbies.html"><button class="hobbies">Hobbies</button></a>
+            <a href="contact.html"><button class="contacts">Contact me</button></a>
+            </div>
+        </div>
+    
+        <div class="intro">
+            <h1>Hi! I am Christian Vinarao.</h1>
+            <p class="bio">Computer Engineering Student. <strong><em>Co-Owner of BLG Services and Enterprises</em></strong></p></p>
+            <img class="pfp" src="PFP.jpg" alt="">
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.facebook.com/vinarao1225/"><img class="facebook" src="bnwf.png" alt=""></a>
+            <a href="https://www.instagram.com/tiannvnr/"><img class="instagram" src="bnwi.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/christian-vinarao-aab321251/"><img src="bnwl.png" alt="" class="linkedin"></a>
+            <a href="https://github.com/Shinzer"><img src="git.png" alt="" class="git"></a>
+            <p style="
+            margin-top: 10px;
+            margin-bottom: 0px;
+            text-align: center; 
+            color: rgb(150,150,150); 
+            font-weight: 500; 
+            display: block;">cvinarao50@gmail.com | <a href="https://www.youtube.com/channel/UC8z7pQHpvbWya_QdxbxyisQ"><button class="btn">SUBSCRIBE</button></a> to my YouTube channel.</p>
+        </div>
+
+        <div id="about" style="display: flex; justify-content: center; align-items: center;">
+            <i class="fa fa-html5" style="font-size: 50px; margin-top: 30px;"></i>
+            <i class="fa fa-css3" style="font-size: 50px; margin-left: 20px; margin-top: 30px;"></i>
+            <i class="fa-brands fa-js"></i>
+        </div>
         
-            <div class="educ">
-                <img class="hat" src="mortarboard.png" alt="">
-                <h2 style="text-align: center;">Education</h2>
-                <ul class="teduc">
-                    <li>4th Year, B.S Computer Engineering</li>
-                    <li>SuperSimpleDev Completer</li>
-                </ul>
-            </div>
-    
-            <div class="work">
-                <img class="bag" src="posting.png" alt="">
-                <h2 style="margin-top: 15px; text-align: center;">Work Experience</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Dates</th>
-                            <th>Work</th>
-                        </tr>
-                    </thead>
-                    <tbody class="twork">
+        <div class="content" id="content">
+                <div class="educ">
+                    <img class="hat" src="mortarboard.png" alt="">
+                    <h2 style="margin-left: 121px;">Education</h2>
+                    <ul class="teduc">
+                        <li>4th Year, B.S Computer Engineering</li>
+                        <li>SuperSimpleDev Completer</li>
+                    </ul>
+                </div>
+        
+                <div class="work">
+                    <img class="bag" src="posting.png" alt="">
+                    <h2 style="margin-top: 15px; text-align: center;">Work Experience</h3>
+                    <table>
+                        <thead>
                             <tr>
-                                <td>2020-2023</td>
-                                <td>Illogics Associate</td>
+                                <th>Dates</th>
+                                <th>Work</th>
                             </tr>
-                            <tr>
-                                <td>2023</td>
-                                <td>SuperSimpleDev Trainee</td>
-                            </tr>
-                    </tbody>
-                </table>
-            </div>
-    
-            <div class="skills">
-                <img src="logical-thinking.png" alt="" class="bulb">
-                <h2 style="text-align: center;">Skill Stats</h3>
-            <table class="tskill">
-                  <tr>
-                    <td>
-                        <table>
-                            <tr>
-                                <td>Computer Programming</td>
-                                <td>■■■</td>
-                            </tr>
-                            <tr>
-                                <td>Driving</td>
-                                <td>■■■■■</td>
-                            </tr>
-                            <tr>
-                                <td>People Skills</td>
-                                <td>■■■</td>
-                            </tr>
-                        </table>
-                    </td>
-                    <td>
+                        </thead>
+                        <tbody class="twork">
+                                <tr>
+                                    <td>2023</td>
+                                    <td>Illogics Associate</td>
+                                </tr>
+                                <tr>
+                                    <td>2023</td>
+                                    <td>SuperSimpleDev Trainee</td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </div>
+        
+                <div class="skills">
+                    <img src="logical-thinking.png" alt="" class="bulb">
+                    <h2 style="text-align: center;">Skill Stats</h3>
+                <table class="tskill">
+                      <tr>
                         <td>
                             <table>
                                 <tr>
-                                    <td>Cooking</td>
-                                    <td>■■■</td>
+                                    <td>Computer Programming</td>
+                                    <td>■■■□□</td>
                                 </tr>
                                 <tr>
-                                    <td>Singing</td>
+                                    <td>Driving</td>
                                     <td>■■■■■</td>
                                 </tr>
                                 <tr>
-                                    <td>Trading</td>
-                                    <td>■■■</td>
+                                    <td>People Skills</td>
+                                    <td>■■■□□</td>
                                 </tr>
                             </table>
                         </td>
-                    </td>
-                  </tr>
-            </table>
+                        <td>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td>Cooking</td>
+                                        <td>■■■□□</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Singing</td>
+                                        <td>■■■■■</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trading</td>
+                                        <td>■■■□□</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </td>
+                      </tr>
+                </table>
             </div>
         </div>
     </div>
 
-    </div>
-    <hr class="hr2">
-    <div style="height: 500px;">
-        <h2 class="anc">Achievements and Certificates</h2>
-        <img class="cert" src="cert.jpg" alt="">
-        <a href="https://courses.supersimple.dev/certificates/bxav4b3itt"><p class="link">Certificate of Completion Link - SuperSimpleDev</p></a>
-    </div>
-    <div style="font-weight: bold; margin-left: 30px;">
-        <p style="margin-bottom: 0px;">Created by</p>
-        <p style="margin-top: 0px;">Christian Vinarao, 2023</p>
+        <hr class="hr2">
 
-    </div>
+        <div style="height: 500px;">
+            <h2 class="anc">Achievements and Certificates</h2>
+            <img class="cert" src="cert.jpg" alt="">
+            <a href="https://courses.supersimple.dev/certificates/bxav4b3itt" style="text-decoration: none;"><p class="link">Certificate of Completion Link - SuperSimpleDev</p></a>
+        </div>
 
+        <div style="font-weight: bold; margin-left: 30px;">
+            <p style="margin-bottom: 0px;">Created by</p>
+            <p style="margin-top: 0px;">Christian Vinarao, 2023</p>
+        </div>
+     </section>
 
 </body>
 </html>

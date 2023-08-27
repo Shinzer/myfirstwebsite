@@ -1,0 +1,113 @@
+
+.sidebar *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+/*naka 100% height para kahit anong zoom out mahaba*/
+.sidebar{
+    position: fixed;
+    left: -250px;
+    width: 200px;
+    height: 100%;
+    background:rgba(255, 255, 255, 0.2);
+    font-family: Helvetica, sans-serif;
+    transition: all .5s;
+    box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, .15);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+/* yung "menu" sa pinaka ibabaw" */
+.sidebar header{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background:#808083;
+    user-select: none;
+}
+
+/*properties ng bawat list content*/
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: rgb(118, 95, 95);
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 2px solid rgba(16, 15, 15, 0.1);
+    transition: .3s;
+}
+
+/* glide effect pag nag hohover*/
+ul li:hover a{
+    padding-left: 50px;
+    background-color: rgb(229, 215, 215);
+}
+
+/*paglalagay ng space between icon and text*/
+.sidebar ul a i{
+    margin-right: 16px;
+}
+
+/*hides the checkbox*/
+#check{
+   display: none;
+}
+/*stacks both buttons to the checkbox*/
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+}
+label #btn{
+    border-radius: 15px;
+    padding: 10px;
+    left: 40px;
+    top: 15px;
+    font-size: 37px;
+    color: #666668;
+    transition: all .3s;
+}
+
+#btn:hover{
+    background-color: #666668;
+    color: white;
+}
+
+label #cancel{
+    position:fixed;
+    z-index: 1111;
+    left: -155px;
+    top: 17px;
+    font-size: 33px;
+    color: #f7f7fc;
+    transition: all .476s;
+}
+
+#check:checked ~ .logo{
+    left: 200px;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    left: 155px;
+}
+
+#check:checked ~ section{
+    margin-left: 230px;
+}
+
+section{
+    transition: all 0.3s;
+}
