@@ -13,7 +13,7 @@
     <title>Christian Vinarao</title>
 </head>
 
-<body style="background-color: rgb(248, 241, 241);">
+<body style="background: radial-gradient(circle at 18.7% 37.8%, rgb(250,250,250) 0%, rgb(225,234,238) 90%);">
 
     <input type="checkbox" id="check">
     <label for="check">
@@ -26,7 +26,7 @@
         <ul>
             <li><a href="index.html"><i class="fa fa-home fa-fade"></i>Home</a></li>
             <li><a href="#about"><i class="fa fa-book"></i>About Me</a></li>
-            <li><a href="#"><i class="fa fa-check"></i>Projects</a></li>
+            <li><a href="#pro"><i class="fa fa-check"></i>Projects</a></li>
             <li><a href="contact.html"><i class="fa fa-cog fa-spin"></i>Hire Me</a></li>
         </ul>
     </div>
@@ -41,36 +41,78 @@
             <div class="right">
             <a href="hobbies.html"><button class="hobbies">Hobbies</button></a>
             <a href="contact.html"><button class="contacts">Contact me</button></a>
+            <label>
+                <input type="checkbox" name="" id="night">
+                <span class="check"></span>
+            </label>
             </div>
+            
         </div>
     
         <div class="intro">
-            <h1>Hi! I am Christian Vinarao.</h1>
+            <h1 class="pangalanko">Hi! I am</h1>
+            <h1 class="pangalankorin">Christian Vinarao.</h1>
             <p class="bio">Computer Engineering Student. <strong><em>Co-Owner of BLG Services and Enterprises</em></strong></p></p>
             <img class="pfp" src="PFP.jpg" alt="">
         </div>
 
         <div style="text-align: center;">
-            <a href="https://www.facebook.com/vinarao1225/"><img class="facebook" src="bnwf.png" alt=""></a>
-            <a href="https://www.instagram.com/tiannvnr/"><img class="instagram" src="bnwi.png" alt=""></a>
-            <a href="https://www.linkedin.com/in/christian-vinarao-aab321251/"><img src="bnwl.png" alt="" class="linkedin"></a>
-            <a href="https://github.com/Shinzer"><img src="git.png" alt="" class="git"></a>
+            <a href="https://www.facebook.com/vinarao1225/"><i class="fa fa-facebook" style="
+                font-size: 35px;
+                cursor: pointer;
+                margin-right: 25px;
+                transition: 0.4s;
+                margin-bottom: 20px;
+                color: rgb(111,134,149);"
+                id="fb"></i></a>
+            <a href="https://www.facebook.com/vinarao1225/"><i class="fa fa-instagram" style="
+                font-size: 35px;
+                cursor: pointer;
+                margin-right: 25px;
+                transition: 0.4s;
+                margin-bottom: 20px;
+                color: rgb(111,134,149);"
+                id="ig"></i></a>
+            <a href="https://www.facebook.com/vinarao1225/"><i class="fa fa-linkedin" style="
+                font-size: 35px;
+                cursor: pointer;
+                margin-right: 25px;
+                transition: 0.4s;
+                margin-bottom: 20px;
+                color: rgb(111,134,149);"
+                id="li"></i></a>
+            <a href="https://www.facebook.com/vinarao1225/"><i class="fa fa-github" style="
+                font-size: 35px;
+                cursor: pointer;
+                margin-right: 25px;
+                transition: 0.4s;
+                margin-bottom: 20px;
+                color: rgb(111,134,149);"
+                id="gh"></i></a>
             <p style="
             margin-top: 10px;
-            margin-bottom: 0px;
+            margin-bottom: 15px;
             text-align: center; 
             color: rgb(150,150,150); 
             font-weight: 500; 
             display: block;">cvinarao50@gmail.com | <a href="https://www.youtube.com/channel/UC8z7pQHpvbWya_QdxbxyisQ"><button class="btn">SUBSCRIBE</button></a> to my YouTube channel.</p>
         </div>
 
-        <div id="about" style="display: flex; justify-content: center; align-items: center;">
+        <div id="about" style="display: flex; justify-content: center; align-items: center; margin-bottom: 100px;">
             <i class="fa fa-html5" style="font-size: 50px; margin-top: 30px;"></i>
             <i class="fa fa-css3" style="font-size: 50px; margin-left: 20px; margin-top: 30px;"></i>
-            <i class="fa-brands fa-js"></i>
+            <img src="sql.png" alt="" style="height: 50px; margin-left: 20px; margin-top: 30px;">
+            <img src="cpp.png" alt="" style="height: 50px; margin-left: 20px; margin-top: 30px;">
+            <img src="pyth.png" alt="" style="height: 50px; margin-left: 20px; margin-top: 30px;">
         </div>
         
         <div class="content" id="content">
+            <h2 style="
+            margin-left: 30px;
+            margin-top: 125px;
+            color: rgb(74, 95, 109);
+            font-size: 40px;
+            ">About Me</h2>
                 <div class="educ">
                     <img class="hat" src="mortarboard.png" alt="">
                     <h2 style="margin-left: 121px;">Education</h2>
@@ -147,19 +189,59 @@
             </div>
         </div>
     </div>
+        <!--<hr class="hr2" id="pro">-->
+        <div class="projectcontainer">
+            <h2 class="pro" id="pro" >Projects</h2>
+            <div style="height: 410px;">
+                <a href="https://shinzer.github.io/youtubeclone/">
+                    <div class="proj1">
+                    <img  class="yt" src="youtube.jpg" alt="">
+                    <h2 style="margin-left: 20px; color: rgb(117, 75, 75);">Youtube Clone</h3>
+                    <p style="margin-left: 20px; color: #4b4a4a;">A front end clone of youtube. Made and completed with the guidance of SuperSimpleDev's Course. Click to Visit</p>
+                    <p style="margin-left: 20px; margin-top: 75px; font-size: 10px;">HTML CSS</p>
+                </div>
+                <div class="proj1">
+                    <img  class="cs" src="abstract-grunge-style-coming-soon-with-black-splatter_1017-26690.avif" alt="">
+                    <h2 style="margin-left: 20px; color: rgb(117, 75, 75);">Soon</h3>
+                    <p style="margin-left: 20px; color: #4b4a4a;">Text Holder</p>
+                    <p style="margin-left: 20px; margin-top: 75px; font-size: 10px;">Programming Languages</p>
+                </div>
+                <div class="proj1">
+                    <img  class="cs" src="abstract-grunge-style-coming-soon-with-black-splatter_1017-26690.avif" alt="">
+                    <h2 style="margin-left: 20px; color: rgb(117, 75, 75);">Soon</h3>
+                    <p style="margin-left: 20px; color: #4b4a4a;">Text Holder</p>
+                    <p style="margin-left: 20px; margin-top: 75px; font-size: 10px;">Programming Languages</p>
+                </div>
+               
+                </a>
+            </div>
+        </div>
 
-        <hr class="hr2">
+        <!--<hr class="hr3"> --> 
 
-        <div style="height: 500px;">
+        <div style="
+        height: 100%; 
+        background: linear-gradient(90deg, rgb(226, 229, 222) 0%, rgb(219, 213, 202) 35%, rgb(213, 216, 206) 100%);;
+        padding-top: 20px;">
             <h2 class="anc">Achievements and Certificates</h2>
             <img class="cert" src="cert.jpg" alt="">
-            <a href="https://courses.supersimple.dev/certificates/bxav4b3itt" style="text-decoration: none;"><p class="link">Certificate of Completion Link - SuperSimpleDev</p></a>
+            <div style="display: inline-block; vertical-align: top;">
+                <a href="https://courses.supersimple.dev/certificates/bxav4b3itt" style="text-decoration: none; color: rgb(111,134,149);">
+                    <p class="link" style="
+                        font-size: 20px;
+                        font-weight: bold;">Certificate of Completion Link - SuperSimpleDev</p>
+                        <p style="margin: 70px;
+                        margin-top: 0px;">Completed last August 20-23,2023</p>
+                </a>
+            </div>
+            
+            <div style="font-weight: bold; margin-left: 30px;">
+                <p style="margin-bottom: 0px; color: rgb(111,134,149); margin-top: 50px;">Created by</p>
+                <p style="margin-top: 0px; color: rgb(111,134,149);">Christian Vinarao, 2023</p>
+            </div>   
         </div>
 
-        <div style="font-weight: bold; margin-left: 30px;">
-            <p style="margin-bottom: 0px;">Created by</p>
-            <p style="margin-top: 0px;">Christian Vinarao, 2023</p>
-        </div>
+        
      </section>
 
 </body>

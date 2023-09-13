@@ -36,7 +36,7 @@
     width: 100%;
     line-height: 65px;
     font-size: 20px;
-    color: rgb(118, 95, 95);
+    color: #D8BC8D;
     padding-left: 40px;
     box-sizing: border-box;
     border-top: 2px solid rgba(16, 15, 15, 0.1);
@@ -69,7 +69,7 @@ label #btn{
     left: 40px;
     top: 15px;
     font-size: 37px;
-    color: #666668;
+    color: rgb(111,134,149);
     transition: all .3s;
 }
 
